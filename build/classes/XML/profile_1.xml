@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : save_example.xml.xml
+    Created on : August 31, 2014, 3:31 PM
+    Author     : sarrazij / Céline Fouard
+    Description:
+        Purpose of the document follows.
+-->
+
+<profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://myGame/profile"
+         xsi:schemaLocation="http://myGame/profile save_schema.xsd">
+             
+    <name>Bzah</name>
+    <avatar>image/bzah.jpg</avatar>
+    <birthday>1994-12-02</birthday> 
+    <games>
+        <game date="2013-12-10">
+            <time>20</time>
+            <word level="1">cle</word>
+        </game>   
+        <game date="2013-12-11" found="75%">
+            <word level="2">indice</word>
+        </game> 
+        <game date="2013-12-11">
+            <word level="2">indice</word>
+            <time>20</time>
+        </game>
+    </games>
+</profile>

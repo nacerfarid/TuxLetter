@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://myGame/profile"
+           targetNamespace="http://myGame/profile"
+           elementFormDefault="qualified">
+
+    <xs:element name="profile" type="Profil"/>
+    
+    <xs:complexType name="Profil">
+        <xs:sequence>
+            <xs:element name="name" />
+            <xs:element name="avatar" />
+            <xs:element name="birthday" type="xs:date" />
+            <xs:element name="games" type="Games" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Games">
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="game" type="Game" />
+        </xs:sequence>
+    </xs:complexType>
+    
+    <xs:complexType name="Game">
+        <xs:all>
+            <xs:element name="time" minOccurs="0" maxOccurs="1"/>
+             <xs:element name="word" type="Word"/>        
+        </xs:all>
+        <xs:attribute name="date" type="xs:date" />
+        <xs:attribute name="found" type="xs:string" />
+    </xs:complexType>
+    
+    <xs:complexType name="Word">
+        <xs:simpleContent>
+          <xs:extension base="xs:string">
+            <xs:attribute name="level" type="xs:int" />
+          </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:schema>
+
+

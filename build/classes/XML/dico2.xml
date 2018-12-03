@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dictionnaire xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+    xmlns="http://www.ujf-grenoble.fr/dictionnaire"
+    xsi:schemaLocation='http://www.ujf-grenoble.fr/dictionnaire ../XSD/dico2.xsd'>
+    <mot niveau="1">test</mot>
+    <mot niveau="1">hello</mot>
+    <mot niveau="1">bonjour</mot>
+    <mot niveau="2">souris</mot>
+    <mot niveau="2">travaux</mot>
+    <mot niveau="2">voiture</mot>
+    <mot niveau="3">climatisation</mot>
+    <mot niveau="3">ordinateur</mot>
+    <mot niveau="3">imprimante</mot>
+    <mot niveau="4">constitution</mot>
+    <mot niveau="5">aerodynamisme</mot>
+    
+</dictionnaire>

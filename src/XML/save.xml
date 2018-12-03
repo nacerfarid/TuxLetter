@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><profile xmlns="http://ujf-grenoble/profile" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://ujf-grenoble/profile ./src/XSD/profileSchema.xsd">
+    <name>Nacer</name>
+    <avatar>image/tux.jpg</avatar>
+    <birthday>2006-05-08</birthday>
+    <games>
+        <game date="2015-10-03">
+            <time>20</time>
+            <word level="1">test</word>
+        </game>
+        <game date="2014-03-04" found="60%">
+            <word level="2">enceinte</word>
+        </game>
+        <game date="2016-11-05">
+            <time>20</time>
+            <word level="2">jardin</word>
+        </game>
+        <game date="2016-11-22" found="80%">
+            <word level="1">hello</word>
+        </game>
+    </games>
+</profile>

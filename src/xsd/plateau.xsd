@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xs:schema version="1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://dev.ephira.org/tux/plateau"
+           targetNamespace="http://dev.ephira.org/tux/plateau"
+           elementFormDefault="qualified">
+
+           <xs:element name="dictionnaire" type="Dictionnaire" />
+           
+           <xs:complexType name="Dictionnaire">
+               <xs:sequence>
+                   <xs:element name="mot" type="Mot" maxOccurs="unbounded"/>
+               </xs:sequence>
+           </xs:complexType>
+           
+           <xs:complexType name="Mot">
+               <xs:sequence>
+                    <xs:element name="niveauDiff" type="NiveauDiff"/>
+                    <xs:element name="lettre" type="xs:int" minOccurs="3" maxOccurs="unbounded"/>
+               </xs:sequence>
+           </xs:complexType>
+           
+           <xs:simpleType name="NiveauDiff">
+               <xs:restriction base="xs:int">
+                    <xs:minInclusive value="1"/>
+                    <xs:maxInclusive value="5"/>
+               </xs:restriction>
+           </xs:simpleType>
+</xs:schema>
